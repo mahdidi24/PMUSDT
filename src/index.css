@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Niramit";
+  src: url("/fonts/Niramit-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  font-family: "Niramit", sans-serif;
+}
+.MuiDataGrid-root {
+  --DataGrid-t-color-border-base: transparent !important;
+}
+.MuiDataGrid-root {
+  --DataGrid-t-header-background-base: transparent !important;
+}
