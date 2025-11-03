@@ -36,7 +36,7 @@ function DashboardProfile() {
       const form = useFormik<FormValues>({
         initialValues: { email: "", password: "", name: "" },
     
-        onSubmit: (values) => {
+        onSubmit: () => {
           
           form.resetForm();
         },
