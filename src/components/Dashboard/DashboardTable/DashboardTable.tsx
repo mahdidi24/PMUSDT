@@ -144,7 +144,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "unsuccessful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 2,
@@ -154,7 +154,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "checking",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 3,
@@ -164,7 +164,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 4,
@@ -174,7 +174,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 5,
@@ -184,7 +184,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 6,
@@ -194,7 +194,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 7,
@@ -204,7 +204,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 8,
@@ -214,7 +214,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 9,
@@ -224,7 +224,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "unsuccessful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 10,
@@ -234,7 +234,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "checking",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 11,
@@ -244,7 +244,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 12,
@@ -254,7 +254,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "unsuccessful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 13,
@@ -264,7 +264,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
   {
     id: 14,
@@ -274,7 +274,7 @@ const rows = [
     Recived: "1200",
     Date: "25-02-2023",
     Status: "successful",
-    Link: "see more",
+    Link: "See More",
   },
 ];
 
