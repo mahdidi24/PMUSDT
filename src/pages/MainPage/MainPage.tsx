@@ -13,8 +13,6 @@ import Confirm from "../../components/Confirm/Confirm";
 import PmToTheter from "../../components/Complete/PmToTheter/PmToTheter";
 import TheterToPm from "../../components/Complete/TheterToPm/TheterToPm";
 
-
-
 const steps = [
   {
     title: "Exchange",
@@ -33,9 +31,9 @@ function MainPage() {
     direction: "",
     fromAmount: "",
     toAmount: "",
-    swap : false
+    swap: false,
   });
-  console.log('swap',exchange.swap)
+  console.log("swap", exchange.swap);
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -50,7 +48,7 @@ function MainPage() {
   // }
 
   return (
-    <Container sx={{}}>
+    <Container>
       <Box
         sx={{
           mt: 4,
@@ -61,7 +59,7 @@ function MainPage() {
         <Stepper
           activeStep={activeStep}
           sx={{
-            "& .MuiStepIcon-root": { Color: "#596B89" },
+            "& .MuiStepIcon-root": { color: "#596B89" },
             "& .MuiStepIcon-root.Mui-active": {
               color: "#40A578",
               boxShadow: "0px 4px 10px 0px #40A57880",
@@ -93,10 +91,12 @@ function MainPage() {
             "& .Mui-completed .MuiStepConnector-line": {
               borderColor: "#40A578",
             },
+            "& .MuiStepIcon-text": {
+              fill: "#fff",
+            },
             paddingY: "36px",
             paddingX: "235px",
             borderRadius: "50%",
-            display: "flex",
           }}
         >
           {steps.map((step, index) => (
@@ -118,16 +118,22 @@ function MainPage() {
       <Box sx={{ mt: 3 }}>
         {activeStep === 0 && (
           <Exchange onNext1={handleNext} onSetExchange={setExchange} />
-         
         )}
-        {activeStep === 1 && <Confirm onNext1={handleNext} from = {exchange.fromAmount} to={exchange.toAmount} swap={exchange.swap} />}
+        {activeStep === 1 && (
+          <Confirm
+            onNext1={handleNext}
+            from={exchange.fromAmount}
+            to={exchange.toAmount}
+            swap={exchange.swap}
+          />
+        )}
 
         {activeStep === 2 && (
           <Typography sx={{ mt: 5, textAlign: "center" }}>
             {exchange.direction === "usdt-to-pm" ? (
-              <TheterToPm from = {exchange.fromAmount} to={exchange.toAmount} />
+              <TheterToPm from={exchange.fromAmount} to={exchange.toAmount} />
             ) : (
-              <PmToTheter from = {exchange.fromAmount} to={exchange.toAmount} />
+              <PmToTheter from={exchange.fromAmount} to={exchange.toAmount} />
             )}
           </Typography>
         )}

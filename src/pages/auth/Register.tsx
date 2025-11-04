@@ -91,7 +91,7 @@ function Register() {
         >
           Register
         </Typography>
-        <FormLabel sx={{ color: theme.palette.text.primary }}>Name :</FormLabel>
+        <FormLabel sx={{ color:'#ABABAB' }}>Name :</FormLabel>
         <TextField
           onChange={form.handleChange}
           value={form.values.name}
@@ -103,7 +103,7 @@ function Register() {
           error={Boolean(form.errors.name && form.touched.name)}
           helperText={form.touched.name && form.errors.name}
         />
-        <FormLabel sx={{ color: theme.palette.text.primary }}>
+        <FormLabel sx={{ color:'#ABABAB' }}>
           Email :
         </FormLabel>
         <TextField
@@ -135,7 +135,7 @@ function Register() {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary }}>
+          <FormLabel sx={{ color:'#ABABAB' }}>
             Password :
           </FormLabel>
           {form.touched.password && (
@@ -188,7 +188,7 @@ function Register() {
         </Button>
         <Stack direction="row" gap="3px" justifyContent={"center"}>
           <Typography color={theme.palette.text.primary}>
-            have an account?
+            Have An Account?
           </Typography>
           <Link href="/auth/login" color="#1D8D94">Login</Link>
         </Stack>

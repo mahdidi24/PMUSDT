@@ -91,7 +91,7 @@ const inputHideHandler = () => {
 
         {step === 1 ? (
           <>
-            <FormLabel>Email:</FormLabel>
+            <FormLabel sx={{ color:'#ABABAB'}}>Email:</FormLabel>
             <TextField
               name="email"
               value={formEmail.values.email}
@@ -114,7 +114,7 @@ const inputHideHandler = () => {
                 ),
               }}
             />
-            <Button type="submit" sx={{ mt: 2 }}>
+            <Button type="submit" sx={{ mt: 2, paddingY:'19px', marginBottom:'52px'}}>
               Continue
             </Button>
           </>
@@ -125,7 +125,7 @@ const inputHideHandler = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary }}>
+          <FormLabel sx={{ color:'#ABABAB' }}>
            New Password :
           </FormLabel>
           {form.touched.password && (
@@ -174,7 +174,7 @@ const inputHideHandler = () => {
         />
 
            
-          <FormLabel sx={{ color: theme.palette.text.primary }}>
+          <FormLabel sx={{ color:'#ABABAB' }}>
            Confirm Password :
           </FormLabel>
           
@@ -202,7 +202,7 @@ const inputHideHandler = () => {
             ),
           }}
         />
-              <Button type="submit">Confirm</Button>
+              <Button sx={{paddingY:'19px' , marginY:'36px'}} type="submit">Confirm</Button>
           </>
         )}
       </Box>

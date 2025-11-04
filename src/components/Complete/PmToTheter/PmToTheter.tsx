@@ -41,7 +41,7 @@ function PmToTheter( {from , to} : any) {
         <Box sx={{paddingY: 2, paddingX: "77px", boxShadow: 0}}>
         <Stack direction='row' sx={{ justifyContent:'space-between', alignItems:'center'}}>
             <Typography sx={{fontSize:'20px'}} color="primary">transaction details :</Typography>
-            <CircularTimer duration={20} size={170} onComplete={() => setSubmit(2)}/>
+            <CircularTimer duration={15} size={170} onComplete={() => setSubmit(2)}/>
 
         </Stack>
 
@@ -57,32 +57,32 @@ function PmToTheter( {from , to} : any) {
         >
           <Box>
             <Typography
-              sx={{ fontSize: "16px", marginBottom: 1 }}
+              sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
               send :
             </Typography>
-            <Typography sx={{ fontSize: "16px" }} color="primary">
+            <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
               receive :
             </Typography>
           </Box>
           <Box>
-            <Stack direction="row" sx={{ gap: 1, marginBottom: 1 , justifyContent:'end' , display:'flex' }}>
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+            <Stack direction="row" sx={{ gap: 1, marginBottom: 1 , justifyContent:'end' , display:'flex', fontWeight:'bold'}}>
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 {from}
               </Typography>
               <img src="/pm2.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 Perfect Money
               </Typography>
              
             </Stack>
             <Stack direction="row" sx={{ gap: 1 , justifyContent:'end' , display:'flex' }}>
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 {to}
               </Typography>
              <img src="/theter.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 USDT
               </Typography>
 
@@ -102,7 +102,7 @@ function PmToTheter( {from , to} : any) {
             
           }}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary }}>
+          <FormLabel sx={{  color:'#ABABAB' }}>
             perfect money code :
           </FormLabel>
           <TextField
@@ -123,7 +123,7 @@ function PmToTheter( {from , to} : any) {
             marginBottom: 2,
           }}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary }}>
+          <FormLabel sx={{  color:'#ABABAB' }}>
             perfect money number :
           </FormLabel>
           <TextField
@@ -135,7 +135,7 @@ function PmToTheter( {from , to} : any) {
           />
         </Box>
         <Box sx={{width:'100%'}}>
-            <FormLabel sx={{ color: theme.palette.text.primary }}>
+            <FormLabel sx={{  color:'#ABABAB' }}>
             perfect money number :
           </FormLabel>
         <Stack
@@ -148,11 +148,15 @@ function PmToTheter( {from , to} : any) {
                 }}
               >
                 <Select
+                defaultValue="TRON"
                   sx={{
                     borderTopRightRadius: "0px",
                     borderBottomRightRadius: "0px",
                     backgroundColor: "#1D8D94",
                     width: "126px",
+                    "& .MuiSelect-icon": {
+                      color: "white",
+                    },
                   }}
                 >
                   <MenuItem value="TRON">TRON</MenuItem>

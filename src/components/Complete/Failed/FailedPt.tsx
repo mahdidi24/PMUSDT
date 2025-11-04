@@ -25,12 +25,12 @@ function FailedPt({ from, to }: any) {
         >
           <Box>
             <Typography
-              sx={{ fontSize: "16px", marginBottom: 1 }}
+              sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
               send :
             </Typography>
-            <Typography sx={{ fontSize: "16px" }} color="primary">
+            <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
               receive :
             </Typography>
           </Box>
@@ -44,11 +44,11 @@ function FailedPt({ from, to }: any) {
                 display: "flex",
               }}
             >
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 {from}
               </Typography>
               <img src="/pm2.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 Perfect Money
               </Typography>
             </Stack>
@@ -56,11 +56,11 @@ function FailedPt({ from, to }: any) {
               direction="row"
               sx={{ gap: 1, justifyContent: "end", display: "flex" }}
             >
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 {to}
               </Typography>
               <img src="/theter.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
+              <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                 USDT
               </Typography>
             </Stack>
@@ -73,7 +73,7 @@ function FailedPt({ from, to }: any) {
             sx={{ justifyContent: "center", alignItems: "center", gap: 1 }}
           >
             <CloseOutlinedIcon color="error" sx={{ fontSize: "40px" }} />
-            <Typography sx={{ fontSize: "32px" }} color="error">
+            <Typography sx={{ fontSize: "32px" , fontWeight:'bold'}} color="error">
               Your payment time has expired !
             </Typography>
           </Stack>

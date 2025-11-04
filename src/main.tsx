@@ -20,8 +20,9 @@ createRoot(document.getElementById("root")!).render(
       <CssBaseline />
       <Provider store = {store}>
         <PersistGate loading={null} persistor={presistor}>
-      <Navbar />
+      
       <BrowserRouter>
+      <Navbar />
       <LoginProvider>
       <App />
       </LoginProvider>

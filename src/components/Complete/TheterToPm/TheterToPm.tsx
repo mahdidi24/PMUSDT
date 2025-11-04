@@ -48,7 +48,7 @@ function TheterToPm({ from, to }: any) {
               transaction details :
             </Typography>
             <CircularTimer
-              duration={20}
+              duration={15}
               size={170}
               onComplete={() => setSubmit(2)}
             />
@@ -65,12 +65,12 @@ function TheterToPm({ from, to }: any) {
           >
             <Box>
               <Typography
-                sx={{ fontSize: "16px", marginBottom: 1 }}
-                color="primary"
+                sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
+                
               >
                 send :
               </Typography>
-              <Typography sx={{ fontSize: "16px" }} color="primary">
+              <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
                 receive :
               </Typography>
             </Box>
@@ -84,23 +84,23 @@ function TheterToPm({ from, to }: any) {
                   display: "flex",
                 }}
               >
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   {from}
                 </Typography>
                 <img src="/theter.png" alt="" />
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   USDT
                 </Typography>
               </Stack>
               <Stack
                 direction="row"
-                sx={{ gap: 1, justifyContent: "end", display: "flex" }}
+                sx={{ gap: 1, justifyContent: "end", display: "flex" , fontWeight:'bold'}}
               >
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   {to}
                 </Typography>
                 <img src="/pm2.png" alt="" />
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   Perfect Money
                 </Typography>
               </Stack>
@@ -117,11 +117,11 @@ function TheterToPm({ from, to }: any) {
           >
             <Box>
               <Typography
-                sx={{ fontSize: "20px", marginBottom: "38px" }}
+                sx={{ fontSize: "20px", marginBottom: "38px" , color:'#ABABAB'}}
                 color="primary"
               >
-                choose network and To receive 120 Perfect Money, please deposit
-                100 Tether to the Tether address below:
+                Choose Network And To Receive 120 Perfect Money, Please Deposit
+                100 Tether To The Tether Address Below:
               </Typography>
               <Stack
                 direction="row"
@@ -132,11 +132,16 @@ function TheterToPm({ from, to }: any) {
                 }}
               >
                 <Select
+                  defaultValue="TRON"
                   sx={{
                     borderTopRightRadius: "0px",
                     borderBottomRightRadius: "0px",
                     backgroundColor: "#1D8D94",
                     width: "126px",
+                    color: "white",
+                    "& .MuiSelect-icon": {
+                      color: "white",
+                    },
                   }}
                 >
                   <MenuItem value="TRON">TRON</MenuItem>
@@ -157,10 +162,10 @@ function TheterToPm({ from, to }: any) {
             </Box>
             <Box marginLeft={"30px"}>
               <QRCodeSVG
-                value="x09aa998ee454c456255daf3ac94908f1dcfb7033" // 👈 آدرس یا هر داده‌ای که بخوای رمزگذاری بشه
-                size={191} // اندازه QR
-                fgColor="#000000ff"
-                level="Q" // سطح تصحیح خطا (L, M, Q, H)
+                value="x09aa998ee454c456255daf3ac94908f1dcfb7033"
+                size={191}
+                fgColor="#ABABAB"
+                bgColor="#2A3342"
               />
             </Box>
           </Stack>
@@ -183,7 +188,7 @@ function TheterToPm({ from, to }: any) {
               {items.map((text, index) => (
                 <ListItem
                   key={index}
-                  sx={{ display: "flex", alignItems: "flex-start" }}
+                  sx={{ display: "flex", alignItems: "flex-start" , color:'#ABABAB'}}
                 >
                   <Typography
                     variant="body1"

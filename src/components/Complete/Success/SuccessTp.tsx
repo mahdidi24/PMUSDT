@@ -12,7 +12,7 @@ function SuccessTp({from , to} : any) {
             direction="row"
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
-            <Typography sx={{ fontSize: "20px" }} color="primary">
+            <Typography sx={{ fontSize: "20px", paddingTop:'90px' }} color="primary">
               transaction details :
             </Typography>
           </Stack>
@@ -23,17 +23,17 @@ function SuccessTp({from , to} : any) {
               justifyContent: "space-between",
               borderBottom: "1px solid #596B89",
               paddingBottom: 2,
-              marginTop: "80px",
+              marginTop: "49px",
             }}
           >
             <Box>
               <Typography
-                sx={{ fontSize: "16px", marginBottom: 1 }}
+                sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
                 color="primary"
               >
                 send :
               </Typography>
-              <Typography sx={{ fontSize: "16px" }} color="primary">
+              <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
                 receive :
               </Typography>
             </Box>
@@ -47,11 +47,11 @@ function SuccessTp({from , to} : any) {
                   display: "flex",
                 }}
               >
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" ,fontWeight:'bold'}} color="secondry">
                   {from}
                 </Typography>
                 <img src="/theter.png" alt="" />
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   USDT
                 </Typography>
               </Stack>
@@ -59,11 +59,11 @@ function SuccessTp({from , to} : any) {
                 direction="row"
                 sx={{ gap: 1, justifyContent: "end", display: "flex" }}
               >
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   {to}
                 </Typography>
                 <img src="/pm2.png" alt="" />
-                <Typography sx={{ fontSize: "14px" }} color="secondry">
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
                   Perfect Money
                 </Typography>
                 
@@ -76,7 +76,7 @@ function SuccessTp({from , to} : any) {
             <CheckIcon sx={{color : theme.palette.success.main ,fontSize:'41px'}}/>
             <Typography sx={{fontSize:'34px'}} color="success">payment success !</Typography>
             </Stack>
-            <Typography fontSize={'20px'} color="primary" sx={{marginTop:'25px' , marginBottom:'14px', textAlign:'center'}}>The transaction was successfully completed and the amount of 100 Tether was deposited to this address</Typography>
+            <Typography fontSize={'20px'} color="primary" sx={{marginTop:'25px' , marginBottom:'14px', textAlign:'center', color:'#ABABAB'}}>The Transaction Was Successfully Completed And The Amount Of 100 Tether Was Deposited To This Address</Typography>
         </Box>
             <Box>
         <Stack direction='row'
@@ -87,7 +87,7 @@ function SuccessTp({from , to} : any) {
             alignItems:'center'
           }}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary ,fontSize:'18px' ,}}>
+          <FormLabel sx={{ color:'#ABABAB' ,fontSize:'18px' }}>
             E-Voucher :
           </FormLabel>
           <Typography
@@ -111,7 +111,7 @@ function SuccessTp({from , to} : any) {
             alignItems:'center'
           }}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary ,fontSize:'18px' ,}}>
+          <FormLabel sx={{ color:'#ABABAB' ,fontSize:'18px' ,}}>
             Activation Code :
           </FormLabel>
           <Typography
@@ -135,7 +135,7 @@ function SuccessTp({from , to} : any) {
             alignItems:'center'
           }}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary ,fontSize:'18px' ,}}>
+          <FormLabel sx={{ color:'#ABABAB' ,fontSize:'18px' ,}}>
            Amount :
           </FormLabel>
           <Typography
@@ -159,7 +159,7 @@ function SuccessTp({from , to} : any) {
             alignItems:'center'
           }}
         >
-          <FormLabel sx={{ color: theme.palette.text.primary ,fontSize:'18px' ,}}>
+          <FormLabel sx={{ color:'#ABABAB' ,fontSize:'18px' ,}}>
             Time & Date :
           </FormLabel>
           <Typography

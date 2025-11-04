@@ -69,6 +69,10 @@ const theme = createTheme({
                     color: "#ffffffff",
                     opacity: 1,
                     },
+                    "& .MuiOutlinedInput-root": {
+                        "& fieldset": { border: "none" },
+                        "&:hover fieldset": { border: "none" }
+                    }
                     
                     
                     
@@ -78,7 +82,8 @@ const theme = createTheme({
         MuiLink:{
             styleOverrides:{
                 root:{
-                    cursor:"pointer"
+                    cursor:"pointer",
+                    fontWeight:700
                 }
             }
         },

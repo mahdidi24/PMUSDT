@@ -42,7 +42,7 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   const form = useFormik<FormValues>({
-    initialValues: { email: "", password: "" },
+    initialValues: { email: "jgfbhfg@gmail.com", password: "12345678" },
 
     onSubmit: (values) => {
 
@@ -107,7 +107,7 @@ function Login() {
         >
           Login
         </Typography>
-        <FormLabel sx={{ color: theme.palette.text.primary }}>
+        <FormLabel sx={{ color:'#ABABAB'}}>
           Email :
         </FormLabel>
         <TextField
@@ -134,7 +134,7 @@ function Login() {
             ),
           }}
         />
-        <FormLabel sx={{ color: theme.palette.text.primary }}>
+        <FormLabel sx={{ color:'#ABABAB' }}>
           Password :
         </FormLabel>
         <TextField
@@ -182,7 +182,7 @@ function Login() {
           <Typography color={theme.palette.text.primary}>
             dont have an account?
           </Typography>
-          <Link href="/" color="#1D8D94">Register</Link>
+          <Link href="/auth/register" color="#1D8D94">Register</Link>
         </Stack>
       </Box>
     </Container>

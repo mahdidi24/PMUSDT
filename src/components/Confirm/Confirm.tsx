@@ -10,7 +10,9 @@ import {
   Stack,
   TextField,
   Typography,
-  useTheme, FormControlLabel, Checkbox,
+  useTheme,
+  FormControlLabel,
+  Checkbox,
   Button,
 } from "@mui/material";
 import { useFormik } from "formik";
@@ -20,7 +22,6 @@ import { toFormikValidationSchema } from "zod-formik-adapter";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-
 
 const loginSchema = z.object({
   email: z
@@ -41,10 +42,9 @@ const items = [
   "read the terms of exchange. if you accept them, check the approprite boxes9. pay for the application according to the instructions on the website.",
 ];
 
-
-function Confirm({onNext1 , from , to , swap} : any) {
-  const {isLogin} = useSelector((state: any) => state.auth);
-  const [isChecked , setIsChecked] = useState(false)
+function Confirm({ onNext1, from, to, swap }: any) {
+  const { isLogin } = useSelector((state: any) => state.auth);
+  const [isChecked, setIsChecked] = useState(false);
   const theme = useTheme();
 
   const form = useFormik<FormValues>({
@@ -60,129 +60,165 @@ function Confirm({onNext1 , from , to , swap} : any) {
     form.setFieldValue("email", "");
   };
 
-  const handleConfirm = ()=>{
-      onNext1()
-     
-  }
+  const handleConfirm = () => {
+    onNext1();
+  };
 
   return (
     <Paper sx={{ borderRadius: "30px", width: "100%" }}>
       <Box sx={{ paddingY: 2, paddingX: "77px", boxShadow: 0 }}>
         <Typography sx={{ fontSize: "24px", marginBottom: 1 }} color="primary">
-          Invoice details :
+          Invoice Details :
         </Typography>
         <Stack
           direction="row"
           sx={{
             justifyContent: "space-between",
             borderBottom: "1px solid #596B89",
-            paddingBottom: 2,
+            paddingBottom: 3,
+            marginTop: "43px",
           }}
         >
           <Box>
             <Typography
-              sx={{ fontSize: "16px", marginBottom: 1 }}
+              sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
               send :
             </Typography>
-            <Typography sx={{ fontSize: "16px" }} color="primary">
+            <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
               receive :
             </Typography>
           </Box>
-          {!swap && 
-          <Box>
-            <Stack direction="row" sx={{ gap: 1, marginBottom: 1 , justifyContent:'end' , display:'flex' }}>
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-                {from}
-              </Typography>
-              <img src="/theter.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-                USDT
-              </Typography>
-            </Stack>
-            <Stack direction="row" sx={{ gap: 1 , justifyContent:'end' , display:'flex' }}>
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-               {to}
-              </Typography>
-              <img src="/pm2.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-                Perfect Money
-              </Typography>
-            </Stack>
-          </Box>
-          }
+          {!swap && (
+            <Box>
+              <Stack
+                direction="row"
+                sx={{
+                  gap: 1,
+                  marginBottom: 1,
+                  justifyContent: "end",
+                  display: "flex",
+                }}
+              >
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  {from}
+                </Typography>
+                <img src="/theter.png" alt="" />
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  USDT
+                </Typography>
+              </Stack>
+              <Stack
+                direction="row"
+                sx={{ gap: 1, justifyContent: "end", display: "flex" }}
+              >
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  {to}
+                </Typography>
+                <img src="/pm2.png" alt="" />
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  Perfect Money
+                </Typography>
+              </Stack>
+            </Box>
+          )}
 
-            {swap &&
-          <Box>
-            <Stack direction="row" sx={{ gap: 1, marginBottom: 1 , justifyContent:'end' , display:'flex' }}>
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-                {from}
-              </Typography>
-              <img src="/pm2.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-                Perfect Money
-              </Typography>
-            </Stack>
-            <Stack direction="row" sx={{ gap: 1 , justifyContent:'end' , display:'flex' }}>
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-               {to}
-              </Typography>
-            <img src="/theter.png" alt="" />
-              <Typography sx={{ fontSize: "14px" }} color="secondry">
-                USDT
-              </Typography>
-            </Stack>
-          </Box>
-          }
-
+          {swap && (
+            <Box>
+              <Stack
+                direction="row"
+                sx={{
+                  gap: 1,
+                  marginBottom: 1,
+                  justifyContent: "end",
+                  display: "flex",
+                }}
+              >
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  {from}
+                </Typography>
+                <img src="/pm2.png" alt="" />
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  Perfect Money
+                </Typography>
+              </Stack>
+              <Stack
+                direction="row"
+                sx={{ gap: 1, justifyContent: "end", display: "flex" }}
+              >
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  {to}
+                </Typography>
+                <img src="/theter.png" alt="" />
+                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                  USDT
+                </Typography>
+              </Stack>
+            </Box>
+          )}
         </Stack>
 
-
-          {!isLogin ? <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-            gap: 1,
-            marginTop: 2,
-            marginBottom: 2,
-          }}
-        >
-          <FormLabel sx={{ color: theme.palette.text.primary }}>
-            Email :
-          </FormLabel>
-          <TextField
-            onChange={form.handleChange}
-            value={form.values.email}
-            name="email"
-            type="email"
-            required
-            placeholder="Please enter your email"
-            onBlur={form.handleBlur}
-            error={Boolean(form.errors.email && form.touched.email)}
-            helperText={form.touched.email && form.errors.email}
-            InputProps={{
-              endAdornment: form.values.email && (
-                <InputAdornment position="end">
-                  <IconButton
-                    onClick={inputClearHandler}
-                    size="small"
-                    sx={{ color: theme.palette.error.main }}
-                  >
-                    <CancelOutlinedIcon />
-                  </IconButton>
-                </InputAdornment>
-              ),
+        {!isLogin ? (
+          <Box
+            sx={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              gap: 1,
+              marginTop: 2,
+              marginBottom: 2,
             }}
-          />
-        </Box> : ''}
-
-
-        
+          >
+            <FormLabel sx={{ color:'#ABABAB' }}>
+              Email :
+            </FormLabel>
+            <TextField
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "&:hover fieldset": {
+                    border: "none",
+                  },
+                },
+              }}
+              onChange={form.handleChange}
+              value={form.values.email}
+              name="email"
+              type="email"
+              required
+              placeholder="Please enter your email"
+              onBlur={form.handleBlur}
+              error={Boolean(form.errors.email && form.touched.email)}
+              helperText={form.touched.email && form.errors.email}
+              InputProps={{
+                endAdornment: form.values.email && (
+                  <InputAdornment position="end">
+                    <IconButton
+                      onClick={inputClearHandler}
+                      size="small"
+                      sx={{ color: theme.palette.error.main }}
+                    >
+                      <CancelOutlinedIcon />
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </Box>
+        ) : (
+          ""
+        )}
 
         <Box>
-          <Typography sx={{ fontSize: "16px", marginTop:3 }} color="primary">
+          <Typography
+            sx={{
+              fontSize: "16px",
+              marginTop: "43px",
+              marginBottom: "31px",
+              fontWeight: "bold",
+            }}
+            color="primary"
+          >
             Exchange Conditions:
           </Typography>
           <List
@@ -219,21 +255,61 @@ function Confirm({onNext1 , from , to , swap} : any) {
             ))}
           </List>
         </Box>
-        <Stack direction='row'>
-            <FormControlLabel
-              label={`i agree with the AML policy and user agreement. `}
-              control={
-                <Checkbox
-                  value=""
-                  checked={isChecked}
-                  onChange={(e) =>{setIsChecked(e.target.checked)}}
-                  color="primary"
-                />
-              }
-            />
+        <Stack direction="row" sx={{ marginTop: "31px" }}>
+          <FormControlLabel
+            label={
+              <Typography  sx={{fontSize:'16px'}}>
+                I Agree With The{" "}
+                <a
+                  href="/aboutus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#60A7F8",
+                    textDecoration: "none",
+                    fontWeight: 500,
+                    fontSize:'16px'
+                  }}
+                >
+                  AML Policy
+                </a>{" "}
+                And{" "}
+                <a
+                  href="/aboutus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "#60A7F8",
+                    textDecoration: "none",
+                    fontWeight: 500,
+                    fontSize:'16px'
+                  }}
+                >
+                  User Agreement
+                </a>
+                .
+              </Typography>
+            }
+            control={
+              <Checkbox
+                value=""
+                checked={isChecked}
+                onChange={(e) => {
+                  setIsChecked(e.target.checked);
+                }}
+                color="primary"
+              />
+            }
+          />
         </Stack>
-        <Box sx={{marginY:4 , display:'flex' , justifyContent:'center'}}>
-        <Button onClick={handleConfirm} disabled={!isChecked} sx={{width:'560px' ,height:'60px'}}>confirm</Button>
+        <Box sx={{ marginY: 4, display: "flex", justifyContent: "center" }}>
+          <Button
+            onClick={handleConfirm}
+            disabled={!isChecked}
+            sx={{ width: "560px", height: "60px" }}
+          >
+            confirm
+          </Button>
         </Box>
       </Box>
     </Paper>

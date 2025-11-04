@@ -11,7 +11,7 @@ const LoginProvider = ({ children }: providerProps) => {
   const { pathname } = useLocation();
   const isLogin = useSelector((state: RootState) => state.auth.isLogin);
 
-  const publicPaths = ["/auth/login", "/auth/register", "/auth/forget" , '/'];
+  const publicPaths = ["/auth/login", "/auth/register", "/auth/forget" , '/' , '/faq' , "/aboutus" , "/contactus"];
 
   const isPublic = publicPaths.includes(pathname);
 

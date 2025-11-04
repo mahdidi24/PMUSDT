@@ -10,7 +10,7 @@ const CircularTimer = ({ duration = 10, size = 120, onComplete }: any) => {
 
   useEffect(() => {
     if (timeLeft <= 0) {
-      // ✅ وقتی تموم شد تابع onComplete رو صدا بزن
+      
       if (onComplete) onComplete();
       return;
     }
@@ -23,7 +23,7 @@ const CircularTimer = ({ duration = 10, size = 120, onComplete }: any) => {
   }, [timeLeft, onComplete]);
 
   return (
-    <div style={{ position: "relative", width: size, height: size }}>
+    <div style={{ position: "relative", width: size, height: size  }}>
       <svg width={size} height={size}>
         <circle
           cx={size / 2}
@@ -49,7 +49,60 @@ const CircularTimer = ({ duration = 10, size = 120, onComplete }: any) => {
             transformOrigin: "50% 50%",
           }}
         />
+        <circle
+        
+          cx={
+            size / 2 +
+            radius * Math.cos(2 * Math.PI * progress - Math.PI / 2)
+          }
+          cy={
+            size / 2 +
+            radius * Math.sin(2 * Math.PI * progress - Math.PI / 2)
+          }
+          r="5"
+          fill="#40A578"
+          filter="drop-shadow(0 0 6px #40A578)"
+        />
       </svg>
+      
+      <div style={{
+          position: "absolute",
+          top: "30%",
+          left: "50%",
+          textAlign:'center',
+          transform: "translate(-50%, -50%)",
+          color: "#ffffffff",
+        }}>
+          <div
+          style={{
+            fontSize: 10,
+            fontWeight:'bold'
+            
+          }}
+        >
+          Time For Payment
+        </div>
+        
+
+      </div>
+       <div
+        style={{
+          position: "absolute",
+          top: "70%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          color: "#FFFFFF",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 3,
+          fontSize: 15,
+        }}
+      >
+        <img src="/bell.png" style={{ fontSize: 18 ,paddingTop:'3px'}} />
+        <span>15 : 30</span>
+      </div>
+      
 
       <div
         style={{

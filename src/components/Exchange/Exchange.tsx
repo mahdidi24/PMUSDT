@@ -10,7 +10,7 @@ import {
   MenuItem,
   IconButton,
 } from "@mui/material";
-import SwapVertOutlinedIcon from "@mui/icons-material/SwapVertOutlined";
+
 import { useState } from "react";
 
 function Exchange({ onNext1, onSetExchange }: any) {
@@ -28,16 +28,17 @@ function Exchange({ onNext1, onSetExchange }: any) {
   };
 
   const handleMakeExchange = () => {
-    if(fromAmount !== '' && toAmount !== ''){
-    const exchangeData = {
-      direction: swap ? "pm-to-usdt" : "usdt-to-pm",
-      fromAmount,
-      toAmount,
-      swap,
-    };
+    if (fromAmount !== "" && toAmount !== "") {
+      const exchangeData = {
+        direction: swap ? "pm-to-usdt" : "usdt-to-pm",
+        fromAmount,
+        toAmount,
+        swap,
+      };
 
-    onSetExchange(exchangeData);
-    onNext1();}
+      onSetExchange(exchangeData);
+      onNext1();
+    }
   };
 
   return (
@@ -59,7 +60,7 @@ function Exchange({ onNext1, onSetExchange }: any) {
             padding: 4,
           }}
         >
-          <Typography sx={{ paddingLeft: "3px" }} color="primary">
+          <Typography sx={{ paddingLeft: "3px", color:'#ABABAB'}} color="primary">
             From:
           </Typography>
 
@@ -81,8 +82,16 @@ function Exchange({ onNext1, onSetExchange }: any) {
               sx={{
                 width: "50%",
                 "& .MuiOutlinedInput-root": {
+                  borderRadius: 0,
                   "& fieldset": {
                     border: "none",
+                    borderRight: "1px solid #313A4B",
+                    borderRadius: 0,
+                  },
+                  "&:hover fieldset": {
+                    borderRight: "1px solid #313A4B",
+                  },
+                  "&.Mui-focused fieldset": {
                     borderRight: "1px solid #313A4B",
                   },
                 },
@@ -92,8 +101,12 @@ function Exchange({ onNext1, onSetExchange }: any) {
             <Select
               value={swap ? "pm" : "usdt"}
               sx={{
+               color:'#ABABAB',
                 width: "50%",
                 "& .MuiOutlinedInput-notchedOutline": { border: "none" },
+                "& .MuiSelect-icon": {
+                  color: "white",
+                },
               }}
             >
               {swap ? (
@@ -110,10 +123,10 @@ function Exchange({ onNext1, onSetExchange }: any) {
             </Select>
           </Stack>
           <Stack direction="row" sx={{ gap: 2, marginTop: 2 }}>
-            <Typography sx={{ fontSize: "14px" }} color="primary">
+            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
               Min : $100
             </Typography>
-            <Typography sx={{ fontSize: "14px" }} color="primary">
+            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
               Max: $4832
             </Typography>
           </Stack>
@@ -134,7 +147,7 @@ function Exchange({ onNext1, onSetExchange }: any) {
             "&:hover": { backgroundColor: theme.palette.background.default },
           }}
         >
-          <SwapVertOutlinedIcon fontSize="large" sx={{ color: "#F3AC76" }} />
+          <img src="/swap.png" />
         </IconButton>
 
         <Box
@@ -147,7 +160,7 @@ function Exchange({ onNext1, onSetExchange }: any) {
             marginTop: 3,
           }}
         >
-          <Typography sx={{ paddingLeft: "3px" }} color="primary">
+          <Typography sx={{ paddingLeft: "3px" , color:'#ABABAB'}} color="primary">
             To:
           </Typography>
 
@@ -162,15 +175,23 @@ function Exchange({ onNext1, onSetExchange }: any) {
           >
             <TextField
               value={toAmount}
-               onChange={(e) => {
+              onChange={(e) => {
                 const value = e.target.value;
                 if (/^\d*$/.test(value)) setToAmount(value);
               }}
               sx={{
                 width: "50%",
                 "& .MuiOutlinedInput-root": {
+                  borderRadius: 0,
                   "& fieldset": {
                     border: "none",
+                    borderRight: "1px solid #313A4B",
+                    borderRadius: 0,
+                  },
+                  "&:hover fieldset": {
+                    borderRight: "1px solid #313A4B",
+                  },
+                  "&.Mui-focused fieldset": {
                     borderRight: "1px solid #313A4B",
                   },
                 },
@@ -182,6 +203,10 @@ function Exchange({ onNext1, onSetExchange }: any) {
               sx={{
                 width: "50%",
                 "& .MuiOutlinedInput-notchedOutline": { border: "none" },
+                "& .MuiSelect-icon": {
+                  color: "white",
+                },
+                 color:'#ABABAB'
               }}
             >
               {swap ? (
@@ -198,10 +223,10 @@ function Exchange({ onNext1, onSetExchange }: any) {
             </Select>
           </Stack>
           <Stack direction="row" sx={{ gap: 2, marginTop: 2 }}>
-            <Typography sx={{ fontSize: "14px" }} color="primary">
+            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
               Min : $100
             </Typography>
-            <Typography sx={{ fontSize: "14px" }} color="primary">
+            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
               Max: $4832
             </Typography>
           </Stack>
