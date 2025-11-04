@@ -62,6 +62,8 @@ const CircularTimer = ({ duration = 10, size = 120, onComplete }: any) => {
           r="5"
           fill="#40A578"
           filter="drop-shadow(0 0 6px #40A578)"
+          style={{ transition: 'cx 0.5s ease, cy 0.5s ease' }}
+
         />
       </svg>
       

@@ -201,7 +201,9 @@ function Exchange({ onNext1, onSetExchange }: any) {
             <Select
               value={swap ? "usdt" : "pm"}
               sx={{
+                
                 width: "50%",
+                display:'flex',
                 "& .MuiOutlinedInput-notchedOutline": { border: "none" },
                 "& .MuiSelect-icon": {
                   color: "white",
