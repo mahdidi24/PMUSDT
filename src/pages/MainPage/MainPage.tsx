@@ -93,6 +93,7 @@ function MainPage() {
             },
             "& .MuiStepIcon-text": {
               fill: "#fff",
+              
             },
             paddingY: "36px",
             paddingX: "235px",

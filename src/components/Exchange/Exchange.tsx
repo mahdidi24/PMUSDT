@@ -60,7 +60,10 @@ function Exchange({ onNext1, onSetExchange }: any) {
             padding: 4,
           }}
         >
-          <Typography sx={{ paddingLeft: "3px", color:'#ABABAB'}} color="primary">
+          <Typography
+            sx={{ paddingLeft: "3px", color: "#ABABAB" }}
+            color="primary"
+          >
             From:
           </Typography>
 
@@ -101,11 +104,17 @@ function Exchange({ onNext1, onSetExchange }: any) {
             <Select
               value={swap ? "pm" : "usdt"}
               sx={{
-               color:'#ABABAB',
+                color: "#ABABAB",
                 width: "50%",
                 "& .MuiOutlinedInput-notchedOutline": { border: "none" },
                 "& .MuiSelect-icon": {
                   color: "white",
+                },
+                "& .MuiSelect-select": {
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1,
+                  paddingY: "6px",
                 },
               }}
             >
@@ -123,10 +132,16 @@ function Exchange({ onNext1, onSetExchange }: any) {
             </Select>
           </Stack>
           <Stack direction="row" sx={{ gap: 2, marginTop: 2 }}>
-            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
+            <Typography
+              sx={{ fontSize: "14px", color: "#ABABAB" }}
+              color="primary"
+            >
               Min : $100
             </Typography>
-            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
+            <Typography
+              sx={{ fontSize: "14px", color: "#ABABAB" }}
+              color="primary"
+            >
               Max: $4832
             </Typography>
           </Stack>
@@ -160,7 +175,10 @@ function Exchange({ onNext1, onSetExchange }: any) {
             marginTop: 3,
           }}
         >
-          <Typography sx={{ paddingLeft: "3px" , color:'#ABABAB'}} color="primary">
+          <Typography
+            sx={{ paddingLeft: "3px", color: "#ABABAB" }}
+            color="primary"
+          >
             To:
           </Typography>
 
@@ -201,14 +219,19 @@ function Exchange({ onNext1, onSetExchange }: any) {
             <Select
               value={swap ? "usdt" : "pm"}
               sx={{
-                
                 width: "50%",
-                display:'flex',
+                display: "flex",
                 "& .MuiOutlinedInput-notchedOutline": { border: "none" },
                 "& .MuiSelect-icon": {
                   color: "white",
                 },
-                 color:'#ABABAB'
+                color: "#ABABAB",
+                "& .MuiSelect-select": {
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1, 
+                  paddingY: "6px", 
+                },
               }}
             >
               {swap ? (
@@ -225,10 +248,16 @@ function Exchange({ onNext1, onSetExchange }: any) {
             </Select>
           </Stack>
           <Stack direction="row" sx={{ gap: 2, marginTop: 2 }}>
-            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
+            <Typography
+              sx={{ fontSize: "14px", color: "#ABABAB" }}
+              color="primary"
+            >
               Min : $100
             </Typography>
-            <Typography sx={{ fontSize: "14px" , color:'#ABABAB'}} color="primary">
+            <Typography
+              sx={{ fontSize: "14px", color: "#ABABAB" }}
+              color="primary"
+            >
               Max: $4832
             </Typography>
           </Stack>
