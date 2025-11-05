@@ -5,7 +5,6 @@ import {
   InputAdornment,
   List,
   ListItem,
-  ListItemText,
   Paper,
   Stack,
   TextField,
