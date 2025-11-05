@@ -1,8 +1,4 @@
 import { Container, Tab, Tabs, useTheme , Box } from '@mui/material'
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import { useState } from 'react'
 import DashboardTable from '../../components/Dashboard/DashboardTable/DashboardTable';
 import DashboardProfile from '../../components/Dashboard/DashboardProfile/DashboardProfile';

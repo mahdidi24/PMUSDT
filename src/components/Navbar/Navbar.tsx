@@ -1,5 +1,5 @@
 import Container from "@mui/material/Container";
-import { Box, Stack, useTheme } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const { isLogin } = useSelector((state: any) => state.auth);
-  const theme = useTheme();
   const location = useLocation();
 
   const navLinks = [
