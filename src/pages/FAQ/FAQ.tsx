@@ -26,50 +26,50 @@ export default function Faq() {
   const qusation = [
     {
       id: 1,
-      titel: "How to Complete Identity Verification For a Personal Account?",
-      dec: "You Can Access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+      titel: "How to Complete Identity Verification For A Personal Account?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 2,
       titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 3,
       titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 4,
       titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 5,
       titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 6,
       titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 7,
       titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
     {
       id: 8,
-      titel:
-        "How to complete identity verification for a personal account on the pmusdt website?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+     titel:
+        "How To Complete Identity Verification For A Personal Account On The Pmusdt Website?",
+      dec: "You Can Access The Identity Verification From [Account] - [Identification], Or Click [Verify] / [Get Verified] From The Homepage Banners. You Can Check Your Current Verification Level On The Page, Which Determines The Trading Limit Of Your Account. To Increase Your Limit, Please Complete The Respective Identity Verification Level.",
     },
   ];
 

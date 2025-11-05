@@ -43,8 +43,8 @@ function ContactUs() {
         <Box sx={{marginBottom :5}}>
             <Typography sx={{fontSize:'32px' , background: "linear-gradient(to right, #1D8D94 0%, #caf8d7ff 100%)",
             WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",fontWeight: "bold"}} color="initial">contact us</Typography>
-            <Typography color="primary">reach out and we will get in touch within 24 hours.</Typography>
+            WebkitTextFillColor: "transparent",fontWeight: "bold"}} color="initial">Contact Us</Typography>
+            <Typography color="primary">Reach Out And We Will Get In Touch Within 24 Hours.</Typography>
         </Box>
 
         <Box sx={{width:'100%'}}>
@@ -56,7 +56,7 @@ function ContactUs() {
         onBlur={form.handleBlur}
         value={form.values.email}
         onChange={form.handleChange}
-        placeholder="Please enter your email"
+        placeholder="Please Enter Your Email"
         sx={{width:'100%', marginY:2}}
         error={form.touched.email && Boolean(form.errors.email)}
           helperText={form.touched.email && form.errors.email}
@@ -71,7 +71,7 @@ function ContactUs() {
         onBlur={form.handleBlur}
         value={form.values.subject}
         onChange={form.handleChange}
-        placeholder="Please Write your subject"
+        placeholder="Please Write Your Subject"
         sx={{width:'100%', marginY:2}}
         error={form.touched.subject && Boolean(form.errors.subject)}
           helperText={form.touched.subject && form.errors.subject}
@@ -79,7 +79,7 @@ function ContactUs() {
           label=""
         />
           <FormLabel sx={{ color: theme.palette.text.primary}}>
-          Message text :
+          Message Text :
         </FormLabel>
         <TextField
         name="message"
@@ -88,7 +88,7 @@ function ContactUs() {
         onBlur={form.handleBlur}
         multiline
         rows={5}
-        placeholder="Please Write your message"
+        placeholder="Please Write Your Message"
         sx={{width:'100%', marginTop:2, height:'150px'}}
         error={form.touched.message && Boolean(form.errors.message)}
           helperText={form.touched.message && form.errors.message}
