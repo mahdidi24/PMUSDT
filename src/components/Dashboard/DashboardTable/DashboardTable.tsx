@@ -291,7 +291,7 @@ export default function DashboardTable() {
 
   return (
     <Paper
-      sx={{ height: "100%", width: "100%", borderRadius: "20px", padding: 2 , boxShadow : 0}}
+      sx={{ height: "100%", width: "100%", borderRadius: "20px", padding: 3 , boxShadow : 0}}
     >
       <Box
         display="flex"
@@ -320,9 +320,9 @@ export default function DashboardTable() {
       <Typography
         variant="h4"
         color={theme.palette.text.secondary}
-        sx={{ marginBottom: 3, fontSize: "24px" }}
+        sx={{marginTop:'41px', marginBottom: 3, fontSize: "24px" }}
       >
-        Latest transactions
+        Latest Transactions
       </Typography>
       <Box sx={{ width: "100%" }}>
         <DataGrid

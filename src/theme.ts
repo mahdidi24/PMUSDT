@@ -66,7 +66,7 @@ const theme = createTheme({
                     borderRadius : "10px",
                     background : "#242C39",
                     "& input::placeholder": {
-                    color: "#ffffffff",
+                    color: "#ABABAB",
                     opacity: 1,
                     },
                     "& .MuiOutlinedInput-root": {
@@ -84,6 +84,16 @@ const theme = createTheme({
                 root:{
                     cursor:"pointer",
                     fontWeight:700
+                }
+            }
+        },
+        MuiOutlinedInput:{
+            styleOverrides:{
+                input:{
+                     '&::placeholder': {
+                    color: '#ABABAB', // رنگ مورد نظر شما
+                    opacity: 1,       // اگه نمی‌خوای محوتر باشه
+          }
                 }
             }
         },

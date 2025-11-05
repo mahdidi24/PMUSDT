@@ -48,7 +48,7 @@ function TheterToPm({ from, to }: any) {
               transaction details :
             </Typography>
             <CircularTimer
-              duration={15}
+              duration={20}
               size={170}
               onComplete={() => setSubmit(2)}
             />

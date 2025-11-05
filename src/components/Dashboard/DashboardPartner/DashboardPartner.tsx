@@ -11,7 +11,7 @@ import {
   TextField, IconButton,
 } from "@mui/material";
 import { useState } from "react";
-import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
+
 import DiamondOutlinedIcon from "@mui/icons-material/DiamondOutlined";
 import { DataGrid } from "@mui/x-data-grid";
 import type { GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
@@ -172,12 +172,11 @@ function DashboardPartner() {
         <Box sx={{ width: "100%", flexGrow: 1 }}>
           <Typography
             variant="h6"
-            color={theme.palette.text.primary}
-            sx={{ textAlign: "start", marginBottom: "15px" }}
+            sx={{ textAlign: "start", marginBottom: "15px", fontSize:'20px', color:'#ABABAB'}}
           >
-            your affiliate link :
+            Your Affiliate Link :
           </Typography>
-          <Stack direction="row" width="100%">
+          <Stack direction="row" width="100%" position={'relative'}>
             <Typography
               variant="subtitle1"
               color={theme.palette.text.primary}
@@ -187,25 +186,27 @@ function DashboardPartner() {
                 textAlign: "start",
                 padding: 2,
                 backgroundColor: theme.palette.background.default,
-                borderRadius: "10px",
-                borderTopRightRadius: 0,
-                borderBottomRightRadius: 0,
+                borderRadius: "10px"
+                
               }}
             >
               https://en.flashobmen.com/ref/acc0c4c8-c799-4216-a281-6d3d3c43a480
             </Typography>
             <Button
               onClick={handleCopy}
-              startIcon={<ContentCopyRoundedIcon />}
+              startIcon={<img src="copy.png" />}
               sx={{
                 alignItems: "center",
                 backgroundColor: "#353F50",
-                borderTopLeftRadius: 0,
-                borderBottomLeftRadius: 0,
                 boxShadow: 0,
+                width:'106px',
+                position:'absolute',
+                right:'0',
+                height:'60px',
+                color:'#ABABAB'
               }}
             >
-              copy
+              Copy
             </Button>
           </Stack>
         </Box>
@@ -238,7 +239,7 @@ function DashboardPartner() {
               </Box>
               <Box>
                 <Typography variant="h6" color={theme.palette.text.primary}>
-                  your Wallet balance{" "}
+                  Your Wallet Balance{" "}
                 </Typography>
                 <Typography variant="h5" color="#40A578">
                   320 USDT
@@ -255,7 +256,7 @@ function DashboardPartner() {
                   boxShadow :0
                 }}
               >
-                withdraw
+                Withdraw
               </Button>
             </Stack>
           </Stack>
@@ -288,7 +289,7 @@ function DashboardPartner() {
               </Box>
               <Box>
                 <Typography variant="h6" color={theme.palette.text.primary}>
-                  your friends
+                  Your Friends
                 </Typography>
                 <Typography variant="h5" color="#F05A7E">
                   32
@@ -307,17 +308,17 @@ function DashboardPartner() {
             marginBottom: 5,
           }}
         >
-          <Typography variant="subtitle1" color="secondry">
-            get 10
+          <Typography variant="subtitle1" color="#ABABAB">
+            Get 10
           </Typography>
           <DiamondOutlinedIcon color="success" />
-          <Typography variant="subtitle1" color="secondry">
-            for each invited user
+          <Typography variant="subtitle1" color="#ABABAB">
+            For Each Invited User
           </Typography>
         </Stack>
         <Box sx={{ marginY: 3 }}>
           <Typography variant="h5" color="primary">
-            Your impressions
+            Your Impressions
           </Typography>
         </Box>
 
@@ -381,12 +382,12 @@ function DashboardPartner() {
         }}>
             <DialogContent sx={{width : '100%' }}>
                 <Stack direction='row' sx={{alignItems : 'center' , paddingBottom : 2 , borderBottom : '1px solid #364153'}}>
-                <Typography sx={{fontSize:'32px', width:'100%', display:'flex'  }}>withdraw</Typography>
+                <Typography sx={{fontSize:'32px', width:'100%', display:'flex'  }}>Withdraw</Typography>
                 <IconButton aria-label="" onClick={handleClose}>
                   <CloseIcon sx={{color :theme.palette.text.primary}}/>
                 </IconButton>
                 </Stack>
-                <Typography variant="subtitle1" color="secondry" sx={{ marginY : 2 , padding : '5px'}}>your wallet address (tether TRC20)</Typography>
+                <Typography variant="subtitle1" color="secondry" sx={{ marginY : 2 , padding : '5px'}}>Your Wallet Address (Tether TRC20)</Typography>
                 <TextField sx={{width:'100%' , backgroundColor : theme.palette.background.default}}
                 label='Address'
                 />

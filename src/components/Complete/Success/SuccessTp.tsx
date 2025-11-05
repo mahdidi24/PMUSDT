@@ -74,7 +74,7 @@ function SuccessTp({from , to} : any) {
         <Box sx={{marginTop:'65px', marginBottom:5}}>
             <Stack direction='row' sx={{justifyContent:'center' , alignItems:'center', gap:1}}>
             <CheckIcon sx={{color : theme.palette.success.main ,fontSize:'41px'}}/>
-            <Typography sx={{fontSize:'34px'}} color="success">payment success !</Typography>
+            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="success">payment success !</Typography>
             </Stack>
             <Typography fontSize={'20px'} color="primary" sx={{marginTop:'25px' , marginBottom:'14px', textAlign:'center', color:'#ABABAB'}}>The Transaction Was Successfully Completed And The Amount Of 100 Tether Was Deposited To This Address</Typography>
         </Box>

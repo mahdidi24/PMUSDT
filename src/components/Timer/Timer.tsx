@@ -44,7 +44,7 @@ const CircularTimer = ({ duration = 10, size = 120, onComplete }: any) => {
           strokeDashoffset={strokeDashoffset}
           strokeLinecap="round"
           style={{
-            transition: "stroke-dashoffset 1s linear",
+            transition: "stroke-dashoffset 0.5s ease",
             transform: "rotate(-90deg)",
             transformOrigin: "50% 50%",
           }}

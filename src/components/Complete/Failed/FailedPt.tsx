@@ -74,14 +74,14 @@ function FailedPt({ from, to }: any) {
           >
             <CloseOutlinedIcon color="error" sx={{ fontSize: "40px" }} />
             <Typography sx={{ fontSize: "32px" , fontWeight:'bold'}} color="error">
-              Your payment time has expired !
+              Your Payment Time Has Expired !
             </Typography>
           </Stack>
           <Typography
             sx={{ fontSize: "18px", textAlign: "center", marginTop: "28px" }}
             color="primary"
           >
-            Please complete the payment process again
+            Please Complete The Payment Process Again
           </Typography>
           <Box
             sx={{ width: "100%", display: "flex", justifyContent: "center" }}
