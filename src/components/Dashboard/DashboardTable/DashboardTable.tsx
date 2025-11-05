@@ -344,7 +344,11 @@ export default function DashboardTable() {
             "& .MuiDataGrid-cell": {
               borderTop: "solid 1px #313A4B",
               textAlign: "center",
+              overflow: "visible !important",
+              textOverflow: "unset !important",
+              whiteSpace: "normal !important",
             },
+            
             "& .MuiDataGrid-cellContent": {
               display: "flex",
               alignItems: "center",
