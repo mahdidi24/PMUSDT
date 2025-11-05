@@ -18,9 +18,9 @@ import CircularTimer from "../../Timer/Timer";
 import { QRCodeSVG } from "qrcode.react";
 
 const items = [
-  "any change in exchange rate on the binance exchange gives us the right to recalculate the amount of the application.",
-  "the rate for your application will be fixed after 1 confirmation online.",
-  "funds are credited after 20 transaction confirmations.",
+  "Any change In Exchange Rate On The Binance Exchange Gives Us The Right To Recalculate The Amount Of The Application.",
+  "The Rate For Your Application Will Be Fixed After 1 Confirmation Online.",
+  "Funds Are Credited After 20 Transaction Confirmations.",
 ];
 
 function TheterToPm({ from, to }: any) {
@@ -45,7 +45,7 @@ function TheterToPm({ from, to }: any) {
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
             <Typography sx={{ fontSize: "20px" }} color="primary">
-              transaction details :
+              Transaction Details :
             </Typography>
             <CircularTimer
               duration={20}
@@ -68,10 +68,10 @@ function TheterToPm({ from, to }: any) {
                 sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
                 
               >
-                send :
+                Send :
               </Typography>
               <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-                receive :
+                Receive :
               </Typography>
             </Box>
             <Box>

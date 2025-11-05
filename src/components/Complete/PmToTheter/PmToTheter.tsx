@@ -40,7 +40,7 @@ function PmToTheter( {from , to} : any) {
         {submit === 0 && (
         <Box sx={{paddingY: 2, paddingX: "77px", boxShadow: 0}}>
         <Stack direction='row' sx={{ justifyContent:'space-between', alignItems:'center'}}>
-            <Typography sx={{fontSize:'20px'}} color="primary">transaction details :</Typography>
+            <Typography sx={{fontSize:'20px'}} color="primary">Transaction Details :</Typography>
             <CircularTimer duration={15} size={170} onComplete={() => setSubmit(2)}/>
 
         </Stack>
@@ -60,10 +60,10 @@ function PmToTheter( {from , to} : any) {
               sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
-              send :
+              Send :
             </Typography>
             <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-              receive :
+              Receive :
             </Typography>
           </Box>
           <Box>
@@ -103,14 +103,14 @@ function PmToTheter( {from , to} : any) {
           }}
         >
           <FormLabel sx={{  color:'#ABABAB' }}>
-            perfect money code :
+            Perfect Money Code :
           </FormLabel>
           <TextField
             value={''}
             name="email"
             type="email"
             required
-            placeholder="Please enter perfect money code "
+            placeholder="Please Enter Perfect Money Code "
           />
         </Box>
         <Box
@@ -124,19 +124,19 @@ function PmToTheter( {from , to} : any) {
           }}
         >
           <FormLabel sx={{  color:'#ABABAB' }}>
-            perfect money number :
+            Perfect Money Number :
           </FormLabel>
           <TextField
             value={''}
             name="email"
             type="email"
             required
-            placeholder="Please enter perfect money number "
+            placeholder="Please Enter Perfect Money Number "
           />
         </Box>
         <Box sx={{width:'100%'}}>
             <FormLabel sx={{  color:'#ABABAB' }}>
-            perfect money number :
+            Perfect Money Number :
           </FormLabel>
         <Stack
                 direction="row"

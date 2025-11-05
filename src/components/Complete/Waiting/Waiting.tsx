@@ -5,8 +5,8 @@ import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 function Waiting({ from, to }: any) {
     const theme = useTheme()
   return (
-    <Paper sx={{ borderRadius: "30px", width: "100%", textAlign: "start" }}>
-    <Box sx={{ paddingY: 2, paddingX: "77px", boxShadow: 0 }}>
+    <Paper sx={{ borderRadius: "30px", width: "100%", textAlign: "start" , boxShadow: 0}}>
+    <Box sx={{ paddingY: 2, paddingX: "77px"}}>
         <Stack
           direction="row"
           sx={{ justifyContent: "space-between", alignItems: "center", paddingTop:'90px' }}
@@ -21,7 +21,7 @@ function Waiting({ from, to }: any) {
           sx={{
             justifyContent: "space-between",
             borderBottom: "1px solid #596B89",
-            paddingBottom: 2,
+            paddingBottom: "44px",
             marginTop: "50px",
           }}
         >
@@ -30,10 +30,10 @@ function Waiting({ from, to }: any) {
               sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
-              send :
+              Send :
             </Typography>
             <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-              receive :
+              Receive :
             </Typography>
           </Box>
           <Box>
@@ -69,10 +69,10 @@ function Waiting({ from, to }: any) {
           </Box>
         </Stack>
 
-        <Box sx={{marginTop:'65px', marginBottom:5}}>
+        <Box sx={{marginTop:'28px', marginBottom:5}}>
             <Stack direction='row' sx={{justifyContent:'center' , alignItems:'center', gap:1}}>
-            <TimerOutlinedIcon sx={{color : theme.palette.warning.main ,fontSize:'41px'}}/>
-            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="warning">waiting...</Typography>
+            <img src="waiting.png"/>
+            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="#FFAF00">waiting ...</Typography>
             </Stack>
             <Typography fontSize={'20px'} color="primary" sx={{marginTop:'25px' , marginBottom:'14px', textAlign:'center', color:'#ABABAB'}}>The Transaction Was Successfully Completed And The Amount Of 100 Tether Was Deposited To This Address</Typography>
         </Box>

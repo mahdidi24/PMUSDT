@@ -33,13 +33,13 @@ const loginSchema = z.object({
   name: z.string("Name is required").min(4, "Must be more than 4 characters"),
 });
 const items = [
-  "any change in exchange rate on the binance exchange gives us the right to recalculate the amount of the application.",
-  "the rate for your application will be fixed after 1 confirmation online.",
-  "funds are credited after 20 transaction confirmations.",
-  "we conduct AML checks in accordance with the AML policy of the flashobmen service.",
-  "fill out all fields of the form provided.",
-  "click the “make an exchange” button.",
-  "read the terms of exchange. if you accept them, check the approprite boxes9. pay for the application according to the instructions on the website.",
+  "Any Change In Exchange Rate On The Binance Exchange Gives Us The Right To Recalculate The Amount Of The Application.",
+  "The Rate For Your Application Will Be Fixed After 1 Confirmation Online.",
+  "Funds Are Credited After 20 Transaction Confirmations.",
+  "We Conduct AML Checks In Accordance With The AML Policy Of The Flashobmen Service.",
+  "Fill Out All Fields Of The Form Provided.",
+  "Click The “Make An Exchange” Button.",
+  "Read The Terms Of Exchange. If You Accept Them, Check The Approprite Boxes9. Pay For The Application According To The Instructions On The Website.",
 ];
 
 function Confirm({ onNext1, from, to, swap }: any) {
@@ -84,10 +84,10 @@ function Confirm({ onNext1, from, to, swap }: any) {
               sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
-              send :
+              Send :
             </Typography>
             <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-              receive :
+              Receive :
             </Typography>
           </Box>
           {!swap && (
@@ -308,7 +308,7 @@ function Confirm({ onNext1, from, to, swap }: any) {
             disabled={!isChecked}
             sx={{ width: "560px", height: "60px" }}
           >
-            confirm
+            Confirm
           </Button>
         </Box>
       </Box>

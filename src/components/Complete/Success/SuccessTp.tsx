@@ -1,5 +1,5 @@
 import { Box, FormLabel, Stack, Typography, useTheme } from "@mui/material"
-import CheckIcon from '@mui/icons-material/Check';
+
 
 
 function SuccessTp({from , to} : any) {
@@ -13,7 +13,7 @@ function SuccessTp({from , to} : any) {
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
             <Typography sx={{ fontSize: "20px", paddingTop:'90px' }} color="primary">
-              transaction details :
+              Transaction Details :
             </Typography>
           </Stack>
 
@@ -31,10 +31,10 @@ function SuccessTp({from , to} : any) {
                 sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
                 color="primary"
               >
-                send :
+                Send :
               </Typography>
               <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-                receive :
+                Receive :
               </Typography>
             </Box>
             <Box>
@@ -73,8 +73,8 @@ function SuccessTp({from , to} : any) {
         
         <Box sx={{marginTop:'65px', marginBottom:5}}>
             <Stack direction='row' sx={{justifyContent:'center' , alignItems:'center', gap:1}}>
-            <CheckIcon sx={{color : theme.palette.success.main ,fontSize:'41px'}}/>
-            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="success">payment success !</Typography>
+            <img src="success.png"/>
+            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="success">Payment Success !</Typography>
             </Stack>
             <Typography fontSize={'20px'} color="primary" sx={{marginTop:'25px' , marginBottom:'14px', textAlign:'center', color:'#ABABAB'}}>The Transaction Was Successfully Completed And The Amount Of 100 Tether Was Deposited To This Address</Typography>
         </Box>

@@ -1,5 +1,4 @@
 import { Box, Button, Paper, Stack, Typography } from "@mui/material";
-import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 
 function FailedPt({ from, to }: any) {
   return (
@@ -28,10 +27,10 @@ function FailedPt({ from, to }: any) {
               sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
               color="primary"
             >
-              send :
+              Send :
             </Typography>
             <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-              receive :
+              Receive :
             </Typography>
           </Box>
           <Box>
@@ -72,7 +71,7 @@ function FailedPt({ from, to }: any) {
             direction="row"
             sx={{ justifyContent: "center", alignItems: "center", gap: 1 }}
           >
-            <CloseOutlinedIcon color="error" sx={{ fontSize: "40px" }} />
+            <img src="failde.png" />
             <Typography sx={{ fontSize: "32px" , fontWeight:'bold'}} color="error">
               Your Payment Time Has Expired !
             </Typography>

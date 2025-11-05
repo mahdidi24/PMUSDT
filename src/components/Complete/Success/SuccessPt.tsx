@@ -1,5 +1,4 @@
 import { Box, FormLabel, Paper, Stack, Typography, useTheme, IconButton, Snackbar } from "@mui/material"
-import CheckIcon from '@mui/icons-material/Check';
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import { useState } from "react";
 
@@ -23,7 +22,7 @@ function SuccessPt({from , to} : any) {
             sx={{ justifyContent: "space-between", alignItems: "center", paddingTop:'90px'}}
           >
             <Typography sx={{ fontSize: "20px" }} color="primary">
-              transaction details :
+              Transaction Details :
             </Typography>
           </Stack>
 
@@ -41,10 +40,10 @@ function SuccessPt({from , to} : any) {
                 sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
                 color="primary"
               >
-                send :
+                Send :
               </Typography>
               <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
-                receive :
+                Receive :
               </Typography>
             </Box>
             <Box>
@@ -84,8 +83,8 @@ function SuccessPt({from , to} : any) {
         
         <Box sx={{marginTop:'29px', marginBottom:5}}>
             <Stack direction='row' sx={{justifyContent:'center' , alignItems:'center', gap:1}}>
-            <CheckIcon sx={{color : theme.palette.success.main ,fontSize:'41px'}}/>
-            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="success">payment success !</Typography>
+            <img src="success.png"/>
+            <Typography sx={{fontSize:'34px', fontWeight:'bold'}} color="success">Payment Success !</Typography>
             </Stack>
             <Typography fontSize={'20px'} color="primary" sx={{marginTop:'25px' , marginBottom:'14px', textAlign:'center', color:'#ABABAB'}}>The Transaction Was Successfully Completed And The Amount Of 100 Tether Was Deposited To This Address</Typography>
         </Box>
@@ -171,7 +170,7 @@ function SuccessPt({from , to} : any) {
           }}
         >
           <FormLabel sx={{  color:'#ABABAB' ,fontSize:'18px' ,}}>
-            Tx id :
+            Tx Id :
           </FormLabel>
           <Stack direction='row' sx={{width: "80%", height:'112px' , backgroundColor: theme.palette.background.default, borderRadius:'10px', gap:5, justifyContent:'center' , alignItems:'center'}}>
           <Typography
