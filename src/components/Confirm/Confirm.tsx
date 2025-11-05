@@ -81,12 +81,15 @@ function Confirm({ onNext1, from, to, swap }: any) {
         >
           <Box>
             <Typography
-              sx={{ fontSize: "16px", marginBottom: 1 , color:'#ABABAB'}}
+              sx={{ fontSize: "16px", marginBottom: 1, color: "#ABABAB" }}
               color="primary"
             >
               Send :
             </Typography>
-            <Typography sx={{ fontSize: "16px" , color:'#ABABAB'}} color="primary">
+            <Typography
+              sx={{ fontSize: "16px", color: "#ABABAB" }}
+              color="primary"
+            >
               Receive :
             </Typography>
           </Box>
@@ -101,11 +104,17 @@ function Confirm({ onNext1, from, to, swap }: any) {
                   display: "flex",
                 }}
               >
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   {from}
                 </Typography>
                 <img src="/theter.png" alt="" />
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   USDT
                 </Typography>
               </Stack>
@@ -113,11 +122,17 @@ function Confirm({ onNext1, from, to, swap }: any) {
                 direction="row"
                 sx={{ gap: 1, justifyContent: "end", display: "flex" }}
               >
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   {to}
                 </Typography>
                 <img src="/pm2.png" alt="" />
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   Perfect Money
                 </Typography>
               </Stack>
@@ -135,11 +150,17 @@ function Confirm({ onNext1, from, to, swap }: any) {
                   display: "flex",
                 }}
               >
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   {from}
                 </Typography>
                 <img src="/pm2.png" alt="" />
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   Perfect Money
                 </Typography>
               </Stack>
@@ -147,11 +168,17 @@ function Confirm({ onNext1, from, to, swap }: any) {
                 direction="row"
                 sx={{ gap: 1, justifyContent: "end", display: "flex" }}
               >
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   {to}
                 </Typography>
                 <img src="/theter.png" alt="" />
-                <Typography sx={{ fontSize: "14px" , fontWeight:'bold'}} color="secondry">
+                <Typography
+                  sx={{ fontSize: "14px", fontWeight: "bold" }}
+                  color="secondry"
+                >
                   USDT
                 </Typography>
               </Stack>
@@ -170,9 +197,7 @@ function Confirm({ onNext1, from, to, swap }: any) {
               marginBottom: 2,
             }}
           >
-            <FormLabel sx={{ color:'#ABABAB' }}>
-              Email :
-            </FormLabel>
+            <FormLabel sx={{ color: "#ABABAB" }}>Email :</FormLabel>
             <TextField
               sx={{
                 "& .MuiOutlinedInput-root": {
@@ -232,25 +257,39 @@ function Confirm({ onNext1, from, to, swap }: any) {
             {items.map((text, index) => (
               <ListItem
                 key={index}
-                sx={{ display: "flex", alignItems: "flex-start" }}
+                sx={{
+                  display: "flex",
+                  gap: 2,
+                  p: 0,
+                }}
               >
-                <Typography
-                  variant="body1"
+                <Box
                   sx={{
                     display: "flex",
+                    alignItems: "center",
                     justifyContent: "center",
                     borderRadius: "50%",
                     backgroundColor: "#1D8D94",
-                    width: "25px",
-                    height: "25px",
-                    fontSize: "14px",
+                    width: 25,
+                    height: 25,
+                    fontSize: 14,
                     color: "primary.main",
-                    marginRight: 2,
+                    flexShrink: 0,
                   }}
                 >
                   {index + 1}
+                </Box>
+
+                <Typography
+                  sx={{
+                    lineHeight: 1.4,
+                    color: "#ABABAB",
+                    fontSize: "16px",
+                    paddingY: "5px",
+                  }}
+                >
+                  {text}
                 </Typography>
-                <ListItemText primary={text} />
               </ListItem>
             ))}
           </List>
@@ -258,7 +297,7 @@ function Confirm({ onNext1, from, to, swap }: any) {
         <Stack direction="row" sx={{ marginTop: "31px" }}>
           <FormControlLabel
             label={
-              <Typography  sx={{fontSize:'16px'}}>
+              <Typography sx={{ fontSize: "16px" }}>
                 I Agree With The{" "}
                 <a
                   href="/aboutus"
@@ -268,7 +307,7 @@ function Confirm({ onNext1, from, to, swap }: any) {
                     color: "#60A7F8",
                     textDecoration: "none",
                     fontWeight: 500,
-                    fontSize:'16px'
+                    fontSize: "16px",
                   }}
                 >
                   AML Policy
@@ -282,7 +321,7 @@ function Confirm({ onNext1, from, to, swap }: any) {
                     color: "#60A7F8",
                     textDecoration: "none",
                     fontWeight: 500,
-                    fontSize:'16px'
+                    fontSize: "16px",
                   }}
                 >
                   User Agreement

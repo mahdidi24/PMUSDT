@@ -27,7 +27,7 @@ export default function Faq() {
     {
       id: 1,
       titel: "How to Complete Identity Verification For a Personal Account?",
-      dec: "You can access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
+      dec: "You Can Access the identity verification from [Account] - [Identification], or click [Verify] / [Get verified] from the homepage banners. You can check your current verification level on the page, which determines the trading limit of your account. To increase your limit, please complete the respective identity verification level.",
     },
     {
       id: 2,
@@ -158,9 +158,9 @@ export default function Faq() {
             expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
             aria-controls="panel1-content"
           >
-            <Stack direction="row" alignItems="center" gap="10px">
+            <Stack direction="row" alignItems="center" gap="10px" >
               <PlayArrowRoundedIcon fontSize="medium" />
-              <Typography component="span" fontSize="18px" fontWeight="700">
+              <Typography component="span" fontSize="18px" fontWeight="700" >
                 {item.titel}
               </Typography>
             </Stack>
@@ -170,6 +170,7 @@ export default function Faq() {
               color: theme.palette.text.secondary,
               fontWeight: "700",
               lineHeight: "32px",
+              
             }}
           >
             {item.dec}
