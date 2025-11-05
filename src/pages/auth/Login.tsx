@@ -167,20 +167,20 @@ function Login() {
         >
           <FormControlLabel
             control={<Checkbox />}
-            label="Keep me login"
+            label="Keep Me Login"
             sx={{
               color: theme.palette.text.primary,
               "& .MuiTypography-root": { fontSize: "16px" },
             }}
           />
-          <Link href="/auth/forget" color="#1D8D94">Forgot your password?</Link>
+          <Link href="/auth/forget" color="#1D8D94">Forgot Your Password?</Link>
         </Stack>
         <Button sx={{ paddingY: "16px" }} type="submit">
           Login
         </Button>
         <Stack direction="row" gap="3px" justifyContent={"center"}>
           <Typography color={theme.palette.text.primary}>
-            dont have an account?
+            Dont Have An Account?
           </Typography>
           <Link href="/auth/register" color="#1D8D94">Register</Link>
         </Stack>
