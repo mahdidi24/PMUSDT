@@ -97,7 +97,7 @@ const inputHideHandler = () => {
               value={formEmail.values.email}
               onChange={formEmail.handleChange}
               onBlur={formEmail.handleBlur}
-              placeholder="Enter your email"
+              placeholder="Enter Your Email"
               error={Boolean(formEmail.touched.email && formEmail.errors.email)}
               helperText={formEmail.touched.email && formEmail.errors.email}
               InputProps={{
@@ -154,7 +154,7 @@ const inputHideHandler = () => {
           name="password"
           type={showPassword ? "text" : "password"}
           required
-          placeholder="Please enter your password"
+          placeholder="Please Enter Your Password"
           onBlur={form.handleBlur}
           error={Boolean(form.errors.password && form.touched.password)}
           helperText={form.touched.password && form.errors.password}
@@ -184,7 +184,7 @@ const inputHideHandler = () => {
           name="confirmPassword"
           type={showPassword ? "text" : "password"}
           required
-          placeholder="Please enter your password"
+          placeholder="Please Enter Your Password"
           onBlur={form.handleBlur}
           error={Boolean(form.errors.password && form.touched.password)}
           helperText={form.touched.password && form.errors.password}
