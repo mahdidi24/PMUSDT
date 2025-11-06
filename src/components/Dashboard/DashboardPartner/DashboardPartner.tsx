@@ -29,7 +29,7 @@ const columns: GridColDef[] = [
           display: "flex",
           alignItems: "center",
           gap: "8px",
-          marginTop: "10px",
+          marginTop: "18px",
           justifyContent: "center",
         }}
       >
@@ -323,6 +323,7 @@ function DashboardPartner() {
         </Box>
 
         <DataGrid
+        rowHeight={65}
           rows={rows}
           columns={columns}
           hideFooter

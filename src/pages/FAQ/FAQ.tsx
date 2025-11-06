@@ -8,7 +8,6 @@ import {
   Box,
 } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -114,7 +113,7 @@ export default function Faq() {
             borderRadius={theme.shape.borderRadius}
             sx={{ width: "100%", backgroundColor: theme.palette.background.default }}
           >
-            <SearchOutlinedIcon />
+            <img src="mg.png" />
             <TextField
               fullWidth
               placeholder="Find Your Desired Question"

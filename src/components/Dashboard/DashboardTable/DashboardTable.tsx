@@ -2,7 +2,6 @@ import { DataGrid } from "@mui/x-data-grid";
 import type { GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
 import Paper from "@mui/material/Paper";
 import { TextField, Typography, Box, useTheme, Button, Pagination } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 
 const columns: GridColDef[] = [
@@ -304,7 +303,7 @@ export default function DashboardTable() {
           backgroundColor: theme.palette.background.default,
         }}
       >
-        <SearchIcon />
+        <img src="mg.png" />
         <TextField
           fullWidth
           placeholder="Search..."
