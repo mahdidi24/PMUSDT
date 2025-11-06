@@ -8,6 +8,7 @@ import MainPage from "./pages/MainPage/MainPage"
 import ContactUs from "./pages/ContactUs/ContactUs"
 import AboutUs from "./pages/AboutUs/AbouteUS"
 import Faq from "./pages/FAQ/FAQ"
+import BlogPage from "./pages/Blog/Blog"
 
 
 
@@ -18,7 +19,8 @@ function App() {
     <>
 
     <Routes>
-     <Route path="/" element={<MainPage/>}/>          
+     <Route path="/" element={<MainPage/>}/>
+     <Route path="/blog" element={<BlogPage/>}/>
      <Route path="/contactus" element={<ContactUs/>}/>
      <Route path="/aboutus" element={<AboutUs/>}/>      
      <Route path="/faq" element={<Faq/>}/>      
