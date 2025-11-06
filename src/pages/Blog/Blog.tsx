@@ -36,7 +36,7 @@ function BlogPage() {
 
   return (
     <Container sx={{ py: 6 }}>
-      {/* Header */}
+     
       <Box sx={{ textAlign: "center", mb: 6 }}>
         <Typography
           variant="h4"
@@ -49,7 +49,7 @@ function BlogPage() {
         </Typography>
       </Box>
 
-      {/* Blog cards */}
+    
       <Stack spacing={4}>
         {posts.map((post, i) => (
           <Card
