@@ -7,10 +7,10 @@ function FailedTp({ from, to }: any) {
       <Box sx={{ paddingY: 2, paddingX: "77px", boxShadow: 0 }}>
         <Stack
           direction="row"
-          sx={{ justifyContent: "space-between", alignItems: "center" }}
+          sx={{ justifyContent: "space-between", alignItems: "center"  ,marginTop:'91px'}}
         >
           <Typography sx={{ fontSize: "20px" }} color="primary">
-            transaction details :
+            Transaction Details :
           </Typography>
         </Stack>
 
@@ -19,7 +19,7 @@ function FailedTp({ from, to }: any) {
           sx={{
             justifyContent: "space-between",
             borderBottom: "1px solid #596B89",
-            paddingBottom: 2,
+            paddingBottom: '34px',
             marginTop: "80px",
           }}
         >

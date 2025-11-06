@@ -330,6 +330,16 @@ function Confirm({ onNext1, from, to, swap }: any) {
             }
             control={
               <Checkbox
+                sx={{
+                  color: "#242C39", 
+                  "&.Mui-checked": {
+                    color: "#307a59ff",
+                    '& .MuiSvgIcon-root': {
+      backgroundColor: '#242C39', // رنگ داخل مربع
+    },
+    
+                  },
+                }}
                 value=""
                 checked={isChecked}
                 onChange={(e) => {

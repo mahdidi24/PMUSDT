@@ -355,6 +355,7 @@ export default function DashboardTable() {
               justifyContent: "center",
               width: "100%",
               height: "100%",
+              
             },
             "& .MuiDataGrid-columnHeaders": {
               borderBottom: "1px solid #313A4B",

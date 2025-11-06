@@ -25,6 +25,28 @@ const steps = [
   },
 ];
 
+function CustomStepIcon (props : any){
+  const {active , completed , icon }= props
+
+
+return(
+  <Box sx={{
+    width:'26px',
+    height:'26px',
+    borderRadius:'50%',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center', 
+    color:'#fff',
+    backgroundColor: active || completed ? "#40A578"  : "#596B89",
+    boxShadow:active ? "0px 4px 10px 0px #40A57880" : 'none',
+    fontSize:'14px'
+  }}>
+    {icon}
+  </Box>
+)}
+
+
 function MainPage() {
   const theme = useTheme();
   const [exchange, setExchange] = React.useState({
@@ -59,13 +81,13 @@ function MainPage() {
         <Stepper
           activeStep={activeStep}
           sx={{
-            "& .MuiStepIcon-root": { color: "#596B89" },
-            "& .MuiStepIcon-root.Mui-active": {
-              color: "#40A578",
-              boxShadow: "0px 4px 10px 0px #40A57880",
-              borderRadius: "50%",
-            },
-            "& .MuiStepIcon-root.Mui-completed": { color: "#40A578" },
+            // "& .MuiStepIcon-root": { color: "#596B89" },
+            // "& .MuiStepIcon-root.Mui-active": {
+            //   color: "#40A578",
+            //   boxShadow: "0px 4px 10px 0px #40A57880",
+            //   borderRadius: "50%",
+            // },
+            // "& .MuiStepIcon-root.Mui-completed": { color: "#40A578" },
             "& .MuiStepConnector-line": {
               width: "65%",
               margin: "0 auto",
@@ -91,18 +113,19 @@ function MainPage() {
             "& .Mui-completed .MuiStepConnector-line": {
               borderColor: "#40A578",
             },
-            "& .MuiStepIcon-text": {
-              fill: "#fff",
+            // "& .MuiStepIcon-text": {
+            //   fill: "#fff",
               
-            },
+            // },
             paddingY: "36px",
             paddingX: "235px",
-            borderRadius: "50%",
+            // borderRadius: "50%",
           }}
         >
           {steps.map((step, index) => (
             <Step key={index}>
               <StepLabel
+              StepIconComponent={CustomStepIcon}
                 onClick={() => {
                   if (index < activeStep) {
                     setActiveStep(index);
