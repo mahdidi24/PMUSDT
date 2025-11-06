@@ -1,5 +1,4 @@
 import { Box, FormLabel, Paper, Stack, Typography, useTheme, IconButton, Snackbar } from "@mui/material"
-import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 import { useState } from "react";
 
 
@@ -186,7 +185,7 @@ function SuccessPt({from , to} : any) {
                   f9798ecf9e9cc54dd819c8e1dc36588a6a7fe9d8e055d56ef6a9847139a4ed6c
                 </Typography>
                 <IconButton onClick={handleCopy} sx={{backgroundColor: theme.palette.background.paper ,borderRadius:'10px', width:'45px' , height:'45px', marginRight:3}}>
-                  <ContentCopyOutlinedIcon sx={{color:theme.palette.text.primary}}/>
+                  <img style={{width:'24px', height:'24px'}} src="/copy.png"/>
                 </IconButton>
                 </Stack>
         </Stack>
