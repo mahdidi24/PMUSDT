@@ -335,7 +335,7 @@ function Confirm({ onNext1, from, to, swap }: any) {
                   "&.Mui-checked": {
                     color: "#307a59ff",
                     '& .MuiSvgIcon-root': {
-      backgroundColor: '#242C39', // رنگ داخل مربع
+      backgroundColor: '#242C39', 
     },
     
                   },
