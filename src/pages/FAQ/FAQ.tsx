@@ -82,6 +82,10 @@ export default function Faq() {
           padding: "64px 96px",
           backgroundColor: theme.palette.secondary.main,
           borderRadius: "30px",
+          "&:last-of-type": {
+      borderBottomLeftRadius: "30px",
+      borderBottomRightRadius: "30px",
+    },
         }}
       >
         <Typography

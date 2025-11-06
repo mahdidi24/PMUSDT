@@ -97,6 +97,15 @@ const theme = createTheme({
                 }
             }
         },
+         MuiAccordion: {
+      styleOverrides: {
+        root: {
+          "&:last-of-type": {
+            borderRadius: "30px",
+          },
+        },
+      },
+    },
         MuiFormHelperText: {
         styleOverrides: {
         root: {
