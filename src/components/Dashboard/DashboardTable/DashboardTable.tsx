@@ -24,7 +24,8 @@ const columns: GridColDef[] = [
             display: "flex",
             alignItems: "center",
             gap: "8px",
-            marginTop: "10px",
+            marginTop: "20px",
+            marginLeft:'12px'
           }}
         >
           <img
@@ -58,7 +59,7 @@ const columns: GridColDef[] = [
             alignItems: "center",
             gap: "8px",
             justifyContent: "center",
-            marginTop: "10px",
+            marginTop: "20px",
           }}
         >
           <img
@@ -326,6 +327,7 @@ export default function DashboardTable() {
       </Typography>
       <Box sx={{ width: "100%" }}>
         <DataGrid
+        rowHeight={65}
           rows={paginatedRow}
           columns={columns}
           hideFooter
