@@ -97,13 +97,13 @@ const columns: GridColDef[] = [
       let color: any = "primary";
       let text: string | undefined = value;
 
-      if (value === "successful") {
+      if (value === "Successful") {
         color = "#40A578";
         text = "Successful";
-      } else if (value === "unsuccessful") {
+      } else if (value === "Unsuccessful") {
         color = "#F66066";
-        text = "unsuccessful";
-      } else if (value === "checking") {
+        text = "Unsuccessful";
+      } else if (value === "Checking") {
         color = "#F3AC76";
         text = "Checking";
       }
@@ -143,7 +143,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "unsuccessful",
+    Status: "Unsuccessful",
     Link: "See More",
   },
   {
@@ -153,7 +153,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "checking",
+    Status: "Checking",
     Link: "See More",
   },
   {
@@ -163,7 +163,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -173,7 +173,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -183,7 +183,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -193,7 +193,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -203,7 +203,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -213,7 +213,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -223,7 +223,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "unsuccessful",
+    Status: "Unsuccessful",
     Link: "See More",
   },
   {
@@ -233,7 +233,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "checking",
+    Status: "Checking",
     Link: "See More",
   },
   {
@@ -243,7 +243,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -253,7 +253,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "unsuccessful",
+    Status: "Unsuccessful",
     Link: "See More",
   },
   {
@@ -263,7 +263,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
   {
@@ -273,7 +273,7 @@ const rows = [
     Amount: "1000",
     Recived: "1200",
     Date: "25-02-2023",
-    Status: "successful",
+    Status: "Successful",
     Link: "See More",
   },
 ];
